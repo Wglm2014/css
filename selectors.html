@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors CSS</title>
+    <!--link to css document-->
+    <link rel="stylesheet" type="text/css" href="./selectors.css" />
+    <!-- the code inside of the brackets is called declaracion the selector
+        can be a html element, .class or #id [attibute] [attibute="attibuteValue" ] <style>selectors{
+
+    }</style>
+    -->
+</head>
+
+<body>
+    <!--css style can be apply alson as an attribute and values inside of the tag element
+        <p style={property:value;}
+    -->
+    <form>
+        Search input::<input type="search"><br>
+        Text input:<input type="text"><br>
+        Email input:<input type="email"><br>
+        Submit input:<input type="submit"><br>
+    </form>
+
+    <section>
+        <a href="#">child</a>
+        <div>
+            <a href="#">descendant</a>
+        </div>
+        <a href="#">child</a>
+    </section>
+
+    <!-- adjacent selector +  and general adjacent selector ~  -->
+    <section>
+        <h1>heading</h1>
+        <h2>heading</h2>
+        <p class="first">paragraph. sibling to heading</p>
+        <p>paragraph. sibling to heading</p>
+    </section>
+
+    <!--multiples classes and specific-->
+
+    <span class="btn submit">span button</span>
+    <input class="btn cancel" type="button" value="input button">
+    <button class="btn">button</button>
+
+    <!--pseudo class selector-->
+    <section>
+        <p>Paragraph.</p>
+        <p>Paragraph.</p>
+        <p>Paragraph.</p>
+        <p>Paragraph.</p>
+    </section>
+</body>
+
+</html>

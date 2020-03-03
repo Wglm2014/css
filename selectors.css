@@ -1,0 +1,73 @@
+/* input is a selector, declaration is all the properties and values inside the brackets */
+input{
+    margin: 4px;
+  }
+
+  /* selecting all the attributes type*/
+  [type]{ 
+    border:1px solid red;
+  }
+  /* selecting the attributes with the value  */
+  [type="search"]{
+    border: 1px solid blue;
+  }
+/* selecting a child, the space means is a descendant selector */
+  section a {
+      color:red;
+  }
+ /* selecting a descendat */
+  section > a{
+      color:blue;
+  }
+
+  /* adjacent siblings + 
+    general siblings  ~*/
+  .first{
+      margin-top:40px;
+  }
+  /* if there is no p adjacent the property value is not apply p is adjacent to h2*/
+  h1 + p {
+      color:red;
+  }
+/* general adjacent sibligs property value is still apply */
+  h1 ~ p{
+       color: green; 
+  }
+
+  /*  multiple classes*/
+  .btn {
+      border: 1px;
+      padding: 4px;
+      display: inline-block;
+      font-size:12px;
+      font-family: Arial,sans-serif;
+  }
+
+  btn.submit{
+      background: green;
+  }
+
+  btn.cancel {
+      background: red;
+  }
+
+  /* pseudo class selector :first-child :last-child :first-of-type :nth-last-of-type*/
+  p:first-child {
+      color: red;
+  }
+  p:last-child {
+      color: blue;
+  }
+  p:first-of-type {
+      color: green;
+  }
+  p:last-of-type {
+      color: orange;
+  }
+/* :nth-child()  & :nth-of-type() value can be keyword, number or algebraic expression : odd, even, 3,4, or 2n+1 
+  n: starts at 0, a any number, b any number
+*/
+
+/* pseudo element selectors pre css3 .element:first-letter post css3 .element::first-letter*/
+
+
