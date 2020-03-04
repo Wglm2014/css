@@ -68,6 +68,16 @@ input{
   n: starts at 0, a any number, b any number
 */
 
-/* pseudo element selectors pre css3 .element:first-letter post css3 .element::first-letter*/
+/* pseudo element selectors pre css3 .element:first-letter post css3 .element::first-letter
+:before :after  pseudo elements do not become part of the dom, they should always be use witn the property
+content:""; where the values can be: string, number, \character
+*/
+
+p::before{
+  content:'\"'
+}
+p::after{
+  content: "\"";
+}
 
 

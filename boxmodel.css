@@ -1,0 +1,87 @@
+/* The Box Model describes the way css handles the size and space of each html element  
+width, height margin pading and border
+
+border is the limite of the element padding is the space between the content and the border, and margin is the space
+outside the morder. The total width and height of an element will include the border, margin and padding.
+*/
+
+/* by default box-sizing is content-box */
+#with-box{
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: antiquewhite;
+}
+
+/* with the fix is set to border box */
+#with-nobox{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: thistle;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* Float: no float block elements are stack above each other, with float can be floated left or right*/
+
+.display{
+    text-align: center;
+}
+
+.display ul {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.display a {
+    padding:10px;
+    display: inline-block;
+
+}
+
+.float {
+    overflow: hidden;
+    text-align: center;
+}
+
+.float a {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+}
+
+/* relative position is the default relative to the parent element, absolute is remove from the flow of the document
+and fix  check the site caniuse.com*/
+
+.parent {
+    position: relative;
+}
+.relative{
+    position: relative;
+    top:10px;
+    left:40px;
+}
+.absolute{
+    position:absolute;
+    left: 60ppx;
+    bottom: 10px;
+    background-color: red;
+}
+.fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+/* The z axis refers to the stacking context. the natural stacking order in the dom
+block elements are the bottom floated elements, inline elements and position element, the last one has priority */
