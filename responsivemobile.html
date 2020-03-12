@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" type="text/css" href="./responsivemobile.css"
+</head>
+<body>
+    <p>
+        1024*768 1280*1024 were popular screens use as base to develope websites
+        Responsive stylesof web developement: 
+        static:horizontal and vertical bars will appear when the screen was to small
+        adaptive: the block of contents will move to the bottom of the screen
+        liquid: the blocks will resize but no reposition of the blocks would move to the bottom
+        responsive: the blocks will resize and move to the bottom if to narrow to show the content
+    </p>
+    <p>
+        gs.statcounter.com has information about screen sizes/
+    </p>
+    <section>
+        <h1>Mobile friendly and mobil first</h1>
+        
+        <h2>Mobile friendly</h2>
+        <p>
+            Refers to disigning first for desktop first and working the way down to smaller devices
+        </p>
+        <h2>Mobile first</h2>
+        <p>Start designing for small screens first. Principals for mobile first:</p>
+        <h3>Graceful Degradation</h2>
+            <p>Start with a full feartured desktop centric website, remove and rearrange and restyle content for smaller viewports, decrease bandwith usage (remove
+                large images and videos). Add touch centric features.
+            </p>
+        <ul>
+            <li>designing for modern browsers first</li>
+            <li>Provide fallbacks for unsupported features</li>
+            <li>Ensure basic functionality works for older browsers</li>
+        </ul>
+        <h3>Progresive Enhancement</h3>
+        Focus on the best experience for mobile first, reduce reliance on mouse actions, 
+        load content quickly and esasily for small screens and determine the essentials at the beginning
+        <ul>
+            <li>Focus on content and accesibility first</li>
+            <li>Create base-level experience first</li>
+            <li>Add advance features for enhancements</li>
+        </ul>
+    </section>
+    <section>
+        <h1>Creating Flexible layouts</h1>
+        <p>Use percentage base widths for page components, use min max widths to add constraints to the layout while maintaining flexibility, and use percentage based width and min max
+            values together
+        </p>
+    </section>
+    <section>
+        <h1>Media Queries</h1>
+        <p>Media query consist of two components: media type and media features</p>
+        <h3>Media types</h3>
+        <ul>
+            <li>print: matches to printers and other print related displays</li>
+            <li>speech: matches screen readers</li>
+            <li>screen: matches all devices that are not print or speech</li>
+            <li>all: matches to all devices</li>
+        </ul>
+        <h3>Media features</h3>
+        <a href="https://tympanus.net/codrops/css_reference/media-queries/">css reference at tympanus</a>
+        <p> examples: </p>
+        <code> @media (max-width: 768px){} /*768 and smaller (most tablets)*/ </code>
+                <br>
+        <code>@media (min-width: 769px) {} /* larger than 768px (most landscape tablets and computers*/)</code>
+        <h4>Specify a range</h4>
+        <code>@media (min-width: 800px) and (max-width:1200px){} </code>
+
+        <h2>Media query berst practices</h2>
+        <p>try not to use too many madia Queries, combine the othe ones that are close in size, try not to get fixated
+            on specific screen size, focus on a break point when required </p>
+    </section>
+    <section>
+        <h1>Testing responsice layouts</h1>
+
+    </section>
+</body>
+</html>

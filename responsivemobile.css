@@ -1,0 +1,10 @@
+section{
+    background-color: beige;
+    margin: auto;
+    padding: 20px;
+    max-width: 80vw; /* it will consider the size of the view port not the screen*/
+    width: 80%; /*wil consider the size of the parent container*/
+    min-width: 20vw;
+    height: 90%;
+    max-height: 90%;
+}
